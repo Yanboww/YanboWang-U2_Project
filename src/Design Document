@@ -33,10 +33,8 @@ Variables:
     int y1 = stores the first y coordinate of the user input
     int x2 = stores the second x coordinate of the user input
     int y2 = stores the stores the second x coordinate of the user input
-    String transX1 = stores the first x coordinate of the user input as a string to be converted
-    String transY1 = stores the first y coordinate of the user input as a string to be converted
-    String transX2 = stores the second x coordinate of the user input as a string to be converted
-    String transY2 = stores the stores the second x coordinate of the user input as a string to be converted
+    String coord1 = stores the first coordinate
+    String coord2 = stores the second coordinate
     double x3 = stores the third x value of the user input
     String transX3 = stores the third x value of the user input as string to be converted
 Objects
@@ -45,6 +43,7 @@ Objects
 Methods:
     use System.out.println to ask for user input
     nextLine() in order to store user input
+    use subString method in order to extract the needed coordinates
     use parseInt() in order to convert input into integer
     use System.out.println(idk) in order to print information of the object
     use parseDouble() in order to convert the last input into double
