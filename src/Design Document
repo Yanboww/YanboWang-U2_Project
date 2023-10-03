@@ -30,7 +30,21 @@ int x1 = stores the first x coordinate of the user input
 int y1 = stores the first y coordinate of the user input
 int x2 = stores the second x coordinate of the user input
 int y2 = stores the stores the second x coordinate of the user input
+String transX1 = stores the first x coordinate of the user input as a string to be converted
+String transY1 = stores the first y coordinate of the user input as a string to be converted
+String transX2 = stores the second x coordinate of the user input as a string to be converted
+String transY2 = stores the stores the second x coordinate of the user input as a string to be converted
 double x3 = stores the third x value of the user input
+String transX3 = stores the third x value of the user input as string to be conveted
 Objects
 LinearEquation idk = new LinearEquation(x1,y1,x2,y2) = creates a idk as a new object of the LinearEquation class
-Scanner s = new Scanner(System.in) = 
+Scanner s = new Scanner(System.in) = creates a new scanner object in order to receive user input
+Methods:
+use System.out.println to ask for user input
+nextLine() in order to store user input
+use parseInt() in order to convert input into integer
+use System.out.println(idk) in order to print information of the object
+use parseDouble() in order to convert the last input into double
+use System.out.print("Solved coordinate point is: " + idk.calcY(x3)) in order to print the last requirement of the program
+
+
