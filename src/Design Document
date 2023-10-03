@@ -1,0 +1,36 @@
+LinearEquation.java = I will use this class to create methods.
+Instance Variables:
+     private int x1 = stores the first x coordinate of the user input
+     private int y1 = stores the first y coordinate of the user input
+     private int x2 = stores the second x coordinate of the user input
+     private int y2 = stores the second x coordinate of the user input
+     private String formula = stores the intercept formula as a string
+     private double slope = stores the slope of the line passing through the points
+     private double yInt = stores the y intercept of the line passing through the points
+     private double distance = distance of the two points
+ Constructor:
+     public LinearEquation(int x1, int y2, int x2, int y2) = sets the coordinates of the points
+ Methods:
+     public String toString = stores the instance formula into strings that can be printed to show information
+     (including the points inputted by the user)
+     public double findSlope = finds the slope of the line using slope formula
+     public String findFormula = finds formula by first finding the slope, plugging in the coordinates and then
+     concatenate then with a slope converted into fraction
+     public double yInt = use the same formula used in findFormula except only returning the y-int
+     public double distance = will use the distance formula (will use math methods) in order to find the distance
+     public String calcY (double x) = will receive an input of x which will be used with the slope and y-int variable
+     to calculate the y value. returns the coordinate as strings
+     (for all methods with a return type specified, I will return them)
+     (for all values that needs to be rounded I'll use the round method from the Math class)
+
+EquationRunner.java = I will use this class to run the methods in the code
+import java.util.Scanner = I will need the scanner in order to ask for user input
+Variables:
+int x1 = stores the first x coordinate of the user input
+int y1 = stores the first y coordinate of the user input
+int x2 = stores the second x coordinate of the user input
+int y2 = stores the stores the second x coordinate of the user input
+double x3 = stores the third x value of the user input
+Objects
+LinearEquation idk = new LinearEquation(x1,y1,x2,y2) = creates a idk as a new object of the LinearEquation class
+Scanner s = new Scanner(System.in) = 
