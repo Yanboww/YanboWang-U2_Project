@@ -14,17 +14,17 @@ Instance Variables:
      public LinearEquation(int x1, int y1, int x2, int y2,String coord1, String coord2) = sets the coordinates of the points
 
  Methods:
-     public String toString(double slope, double yInt, String formula, double distance) = stores the instance formula into strings that can be printed to show information
-     (including the points inputted by the user)
+     public String toString = uses the methods in the LinearEquation to set instance variables on top of the already constructed variables
+     then, stores all required information as a string
      public double findSlope = finds the slope of the line using slope formula
-     public String findFormula = finds formula by first finding the slope, plugging in the coordinates and then
-     concatenate then with a slope converted into fraction
-     public double getYInt = use the same formula used in findFormula except only returning the y-int
-     public double getDistance = will use the distance formula (will use math methods) in order to find the distance
+     public String findFormula = do x2-x1 and y2-y1 individually and then use instance variables to concatenate
+     all the values. Slope will be the value of x2-x2 + "/" + value of y2-y1
+     public double getYInt = use the same formula used in findFormula except isolate y-int and return the resulting value
+     public double getDistance = will use the distance formula (will use Math.sqrt and Math.pow(value,2) methods) in order to find the distance
      public String calcY (double x) = will receive an input of x which will be used with the slope and y-int variable
-     to calculate the y value. returns the coordinate as strings
-     (for all methods with a return type specified, I will return them)
-     (for all values that needs to be rounded I'll use the round method from the Math class)
+     to calculate the y value by plugging x in the formula. returns the coordinate as strings
+     (for all methods with a return type specified, I will return them so if use needs individual values, it's possible)
+     (for all values that needs to be rounded I'll use the round method from the Math class(value*100.0)/100.0)
 
 
 
@@ -38,10 +38,10 @@ Variables:
     int y2 = stores the stores the second x coordinate of the user input
     String coord1 = stores the first coordinate
     String coord2 = stores the second coordinate
-    double x3 = stores the third x value of the user input
-    String transX3 = stores the third x value of the user input as string to be converted
+    String transX3 = stores the third x value as a string to be converted
+    double x3 = stores the third x value of the user input as a double
 Objects
-    LinearEquation idk = new LinearEquation(x1,y1,x2,y2) = creates a idk as a new object of the LinearEquation class
+    LinearEquation idk = new LinearEquation(x1,y1,x2,y2,coord1,coord2) = creates idk as a new object of the LinearEquation class
     Scanner s = new Scanner(System.in) = creates a new scanner object in order to receive user input
 Methods:
     use System.out.println to ask for user input
